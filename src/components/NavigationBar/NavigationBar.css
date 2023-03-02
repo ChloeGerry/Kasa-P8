@@ -1,0 +1,9 @@
+.navigationBar__links {
+  color: var(---primary-color);
+  font-size: var(---navigation-fontSize);
+  text-decoration: none;
+}
+
+.navigationBar__homeLink {
+  margin-right: 56px;
+}
