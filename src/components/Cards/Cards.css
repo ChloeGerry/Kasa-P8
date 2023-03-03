@@ -1,0 +1,10 @@
+.cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 56px;
+  margin: 40px 100px;
+  padding: 56px 0px;
+  background-color: var(---secondary-color);
+  border-radius: var(---border-radius);
+}

@@ -1,8 +1,10 @@
+import './Cards.css';
+import '../../style/variables.css';
 import { useState, useEffect } from 'react';
 import Card from '../Card';
 
 const Cards = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3000/data.json')
@@ -12,9 +14,10 @@ const Cards = () => {
   }, []);
 
   const housing = data;
+  console.log(housing);
 
   return (
-    <section>
+    <section className="cards__wrapper">
       {housing.map(({ id, title, cover }) => (
         <Card key={id} cover={cover} title={title} />
       ))}

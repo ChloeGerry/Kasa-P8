@@ -1,33 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 56px 100px 0px 100px;
+  margin: 0px 100px;
 }
 
 .header__logo {
-  padding: 4px;
-}
-
-.header__logo-part1 {
-  width: 54px;
-  height: 62px;
-}
-
-.header__logo-part2 {
-  width: 46px;
-  height: 53px;
-}
-
-.header__logo-part3 {
-  width: 5px;
-  height: 15px;
-  position: absolute;
-  top: 97px;
-  left: 194px;
-}
-
-.header__logo-part4,
-.header__logo-part5 {
-  width: 40px;
-  height: 48px;
+  margin-top: 40px;
 }

@@ -1,0 +1,20 @@
+.card__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card__image {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card__title {
+  position: absolute;
+  font-size: var(---card-fontSize);
+  color: var(---white);
+  margin: 0px 0px 16px 16px;
+  overflow-wrap: break-word;
+}

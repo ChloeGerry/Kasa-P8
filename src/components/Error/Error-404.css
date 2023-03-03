@@ -1,0 +1,21 @@
+.error__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(---primary-color);
+}
+
+.error__404 {
+  margin: 186px 411px 64px 432px;
+}
+
+.error__text {
+  font-size: 36px;
+  margin: 0;
+}
+
+.error__homepageLink {
+  color: var(---primary-color);
+  margin: 182px 0px 159px 0px;
+  font-size: var(---card-fontSize);
+}

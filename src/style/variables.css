@@ -1,6 +1,9 @@
 html {
   ---primary-color: #ff6060;
-  ---navigation-fontSize: 24px;
+  ---secondary-color: #f6f6f6;
   ---white: #fff;
   ---black: #000;
+  ---navigation-fontSize: 24px;
+  ---border-radius: 25px;
+  ---card-fontSize: 18px;
 }

@@ -1,7 +1,15 @@
+.navigationBar {
+  margin-top: 56px;
+}
+
 .navigationBar__links {
   color: var(---primary-color);
   font-size: var(---navigation-fontSize);
   text-decoration: none;
+}
+
+.navigationBar__links:focus {
+  text-decoration: underline;
 }
 
 .navigationBar__homeLink {
