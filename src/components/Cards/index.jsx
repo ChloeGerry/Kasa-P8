@@ -14,7 +14,6 @@ const Cards = () => {
   }, []);
 
   const housing = data;
-  console.log(housing);
 
   return (
     <section className="cards__wrapper">
