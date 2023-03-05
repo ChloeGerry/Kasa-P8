@@ -8,5 +8,5 @@
 
 .footer__copyright {
   color: var(---white);
-  font-size: var(---navigation-fontSize);
+  font-size: var(---24px-fontSize);
 }

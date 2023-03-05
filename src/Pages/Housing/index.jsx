@@ -1,8 +1,10 @@
+import Slideshow from '../../components/Slideshow';
+
 const Housing = () => {
   return (
-    <header>
-      <h1>Housing</h1>
-    </header>
+    <main>
+      <Slideshow />
+    </main>
   );
 };
 

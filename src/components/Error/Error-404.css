@@ -17,5 +17,5 @@
 .error__homepageLink {
   color: var(---primary-color);
   margin: 182px 0px 159px 0px;
-  font-size: var(---card-fontSize);
+  font-size: var(---18px-fontSize);
 }

@@ -1,17 +1,17 @@
-import './Scrolling.css';
+import './Collapse.css';
 import '../../style/variables.css';
 import { useState } from 'react';
 
-const ScrollingBar = ({ kasaValue, valueText }) => {
+const Collapse = ({ kasaValue, valueText }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
     <article>
-      <div className="scrolling__valueWrapper">
-        <p className="scrolling__value">{kasaValue}</p>
+      <div className="collapse__valueWrapper">
+        <p className="collapse__value">{kasaValue}</p>
         <svg
           onClick={() => setIsOpen(false)}
-          className="srolling__downArrow"
+          className="collapse__downArrow"
           width="25"
           height="15"
           viewBox="0 0 25 15"
@@ -24,17 +24,17 @@ const ScrollingBar = ({ kasaValue, valueText }) => {
           />
         </svg>
       </div>
-      <div className="scrolling__textValueWrapper">
-        <p className="scrolling__textValue">{valueText}</p>
+      <div className="collapse__textValueWrapper">
+        <p className="collapse__textValue">{valueText}</p>
       </div>
     </article>
   ) : (
     <article>
-      <div className="scrolling__valueWrapper">
-        <p className="scrolling__value">{kasaValue}</p>
+      <div className="collapse__valueWrapper">
+        <p className="collapse__value">{kasaValue}</p>
         <svg
           onClick={() => setIsOpen(true)}
-          className="srolling__downArrow"
+          className="scollapse__downArrow"
           width="25"
           height="15"
           viewBox="0 0 25 15"
@@ -51,4 +51,4 @@ const ScrollingBar = ({ kasaValue, valueText }) => {
   );
 };
 
-export default ScrollingBar;
+export default Collapse;

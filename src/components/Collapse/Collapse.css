@@ -1,4 +1,4 @@
-.scrolling__valueWrapper {
+.collapse__valueWrapper {
   width: 991px;
   height: 47px;
   background-color: var(---primary-color);
@@ -9,20 +9,20 @@
   padding: 0px 16px;
 }
 
-.scrolling__value {
+.collapse__value {
   color: var(---white);
-  font-size: var(---navigation-fontSize);
+  font-size: var(---24px-fontSize);
 }
 
-.scrolling__textValueWrapper {
+.collapse__textValueWrapper {
   width: 1007px;
   padding: 32px 0px 24px 16px;
   background-color: var(---secondary-color);
 }
 
-.scrolling__textValue {
+.collapse__textValue {
   color: var(---primary-color);
-  font-size: var(---navigation-fontSize);
+  font-size: var(---24px-fontSize);
   font-weight: 400;
   margin: 0;
 }

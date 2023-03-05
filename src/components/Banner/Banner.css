@@ -1,15 +1,15 @@
 .banner__wrapper {
-  margin: 64px 100px 0px 100px;
+  margin: 64px var(---margin-leftAndRight) 0px var(---margin-leftAndRight);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .banner__image {
-  width: 1240px;
+  width: var(---picture-width);
   height: 223px;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: var(---border-radius);
   filter: brightness(70%);
 }
 

@@ -13,7 +13,7 @@
 
 .card__title {
   position: absolute;
-  font-size: var(---card-fontSize);
+  font-size: var(---18px-fontSize);
   color: var(---white);
   margin: 0px 0px 16px 16px;
   overflow-wrap: break-word;

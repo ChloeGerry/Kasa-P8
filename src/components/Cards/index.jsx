@@ -1,6 +1,7 @@
 import './Cards.css';
 import '../../style/variables.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Card from '../Card';
 
 const Cards = () => {
@@ -18,7 +19,9 @@ const Cards = () => {
   return (
     <section className="cards__wrapper">
       {housing.map(({ id, title, cover }) => (
-        <Card key={id} cover={cover} title={title} />
+        <Link to={`/housing/:${id}`}>
+          <Card key={id} cover={cover} title={title} />
+        </Link>
       ))}
     </section>
   );

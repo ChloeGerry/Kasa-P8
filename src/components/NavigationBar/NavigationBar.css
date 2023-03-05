@@ -4,7 +4,7 @@
 
 .navigationBar__links {
   color: var(---primary-color);
-  font-size: var(---navigation-fontSize);
+  font-size: var(---24px-fontSize);
   text-decoration: none;
 }
 

@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0px 100px;
+  margin: 0px var(---margin-leftAndRight);
 }
 
 .header__logo {

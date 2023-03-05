@@ -3,7 +3,9 @@ html {
   ---secondary-color: #f6f6f6;
   ---white: #fff;
   ---black: #000;
-  ---navigation-fontSize: 24px;
+  ---18px-fontSize: 18px;
+  ---24px-fontSize: 24px;
   ---border-radius: 25px;
-  ---card-fontSize: 18px;
+  ---margin-leftAndRight: 100px;
+  ---picture-width: 1240px;
 }
