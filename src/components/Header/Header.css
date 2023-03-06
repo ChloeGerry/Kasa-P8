@@ -1,9 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0px var(---margin-leftAndRight);
+  margin: 0px var(---margin-desktop);
 }
 
-.header__logo {
-  margin-top: 40px;
+@media screen and (max-width: 767px) {
+  .header {
+    margin: 0px var(---margin-mobile);
+  }
 }

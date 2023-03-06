@@ -15,3 +15,18 @@
 .navigationBar__homeLink {
   margin-right: 56px;
 }
+
+@media screen and (max-width: 767px) {
+  .navigationBar {
+    margin-top: 40px;
+  }
+
+  .navigationBar__links {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .navigationBar__homeLink {
+    margin-right: 8px;
+  }
+}

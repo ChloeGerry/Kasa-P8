@@ -1,15 +1,15 @@
 .banner__wrapper {
-  margin: 64px var(---margin-leftAndRight) 0px var(---margin-leftAndRight);
+  margin: 64px var(---margin-desktop) 0px var(---margin-desktop);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .banner__image {
-  width: var(---picture-width);
+  width: var(---pictureWidth-desktop);
   height: 223px;
   object-fit: cover;
-  border-radius: var(---border-radius);
+  border-radius: var(---borderRadius-desktop);
   filter: brightness(70%);
 }
 
@@ -17,4 +17,20 @@
   font-size: 48px;
   position: absolute;
   color: var(---white);
+}
+
+@media screen and (max-width: 767px) {
+  .banner__wrapper {
+    margin: 16px var(---margin-mobile) 0px var(---margin-mobile);
+  }
+
+  .banner__image {
+    width: var(---pictureWidth-mobile);
+    height: 111px;
+    border-radius: var(---borderRadius-mobile);
+  }
+
+  .banner__title {
+    font-size: var(---24px-fontSize);
+  }
 }

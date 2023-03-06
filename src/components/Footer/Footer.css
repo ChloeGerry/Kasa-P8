@@ -8,5 +8,15 @@
 
 .footer__copyright {
   color: var(---white);
+  margin: 24px 0px 0px 0px;
   font-size: var(---24px-fontSize);
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 64px 0px;
+  }
+  .footer__copyright {
+    font-size: 12px;
+  }
 }

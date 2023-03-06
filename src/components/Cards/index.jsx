@@ -5,22 +5,20 @@ import { Link } from 'react-router-dom';
 import Card from '../Card';
 
 const Cards = () => {
-  const [data, setData] = useState([]);
+  const [housings, setHousings] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3000/data.json')
       .then((result) => result.json())
-      .then((data) => setData(data))
+      .then((housings) => setHousings(housings))
       .catch((error) => console.log(error));
   }, []);
 
-  const housing = data;
-
   return (
     <section className="cards__wrapper">
-      {housing.map(({ id, title, cover }) => (
-        <Link to={`/housing/:${id}`}>
-          <Card key={id} cover={cover} title={title} />
+      {housings.map(({ id, title, cover }) => (
+        <Link key={id} to={`/housing/${id}`}>
+          <Card cover={cover} title={title} />
         </Link>
       ))}
     </section>

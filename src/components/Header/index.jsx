@@ -1,12 +1,12 @@
 import NavigationBar from '../NavigationBar';
 import './Header.css';
 import '../../style/variables.css';
-import Logo from '../Logo';
+import HeaderLogo from '../Logos/HeaderLogo';
 
 const Header = () => {
   return (
     <header className="header">
-      <Logo width="210px" height="68px" fill="#FF6060" />
+      <HeaderLogo />
       <NavigationBar />
     </header>
   );

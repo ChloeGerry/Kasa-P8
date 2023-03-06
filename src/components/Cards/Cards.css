@@ -3,8 +3,17 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 56px;
-  margin: 40px var(---margin-leftAndRight);
+  margin: 40px var(---margin-desktop);
   padding: 56px 0px;
   background-color: var(---secondary-color);
-  border-radius: var(---border-radius);
+  border-radius: var(---borderRadius-desktop);
+}
+
+@media screen and (max-width: 767px) {
+  .cards__wrapper {
+    gap: 24px;
+    background-color: var(---white);
+    padding: 0px;
+    margin: 24px var(---margin-mobile);
+  }
 }

@@ -2,13 +2,13 @@ import './Collapse.css';
 import '../../style/variables.css';
 import { useState } from 'react';
 
-const Collapse = ({ kasaValue, valueText }) => {
+const Collapse = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
     <article>
-      <div className="collapse__valueWrapper">
-        <p className="collapse__value">{kasaValue}</p>
+      <div className="collapse__titleWrapper">
+        <p className="collapse__title">{title}</p>
         <svg
           onClick={() => setIsOpen(false)}
           className="collapse__downArrow"
@@ -24,14 +24,14 @@ const Collapse = ({ kasaValue, valueText }) => {
           />
         </svg>
       </div>
-      <div className="collapse__textValueWrapper">
-        <p className="collapse__textValue">{valueText}</p>
+      <div className="collapse__textWrapper">
+        <p className="collapse__text">{text}</p>
       </div>
     </article>
   ) : (
     <article>
       <div className="collapse__valueWrapper">
-        <p className="collapse__value">{kasaValue}</p>
+        <p className="collapse__value">{title}</p>
         <svg
           onClick={() => setIsOpen(true)}
           className="scollapse__downArrow"

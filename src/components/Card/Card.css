@@ -7,7 +7,7 @@
 .card__image {
   width: 340px;
   height: 340px;
-  border-radius: 10px;
+  border-radius: var(---borderRadius-mobile);
   object-fit: cover;
 }
 
@@ -17,4 +17,11 @@
   color: var(---white);
   margin: 0px 0px 16px 16px;
   overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 767px) {
+  .card__image {
+    width: var(---pictureWidth-mobile);
+    height: 255px;
+  }
 }

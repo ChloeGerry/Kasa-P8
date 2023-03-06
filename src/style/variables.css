@@ -5,7 +5,10 @@ html {
   ---black: #000;
   ---18px-fontSize: 18px;
   ---24px-fontSize: 24px;
-  ---border-radius: 25px;
-  ---margin-leftAndRight: 100px;
-  ---picture-width: 1240px;
+  ---borderRadius-desktop: 25px;
+  ---borderRadius-mobile: 10px;
+  ---margin-desktop: 100px;
+  ---margin-mobile: 24px;
+  ---pictureWidth-desktop: 1240px;
+  ---pictureWidth-mobile: 335px;
 }

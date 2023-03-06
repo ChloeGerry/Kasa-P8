@@ -1,4 +1,4 @@
-.collapse__valueWrapper {
+.collapse__titleWrapper {
   width: 991px;
   height: 47px;
   background-color: var(---primary-color);
@@ -9,18 +9,18 @@
   padding: 0px 16px;
 }
 
-.collapse__value {
+.collapse__title {
   color: var(---white);
   font-size: var(---24px-fontSize);
 }
 
-.collapse__textValueWrapper {
+.collapse__textWrapper {
   width: 1007px;
   padding: 32px 0px 24px 16px;
   background-color: var(---secondary-color);
 }
 
-.collapse__textValue {
+.collapse__text {
   color: var(---primary-color);
   font-size: var(---24px-fontSize);
   font-weight: 400;
