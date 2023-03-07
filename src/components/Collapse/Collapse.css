@@ -1,5 +1,8 @@
+.collapse__wrapper {
+  width: 70%;
+}
+
 .collapse__titleWrapper {
-  width: 991px;
   height: 47px;
   background-color: var(---primary-color);
   border-radius: 5px;
@@ -14,8 +17,12 @@
   font-size: var(---24px-fontSize);
 }
 
+.collapse__arrow {
+  cursor: pointer;
+}
+
 .collapse__textWrapper {
-  width: 1007px;
+  border-radius: 0px 0px 5px 5px;
   padding: 32px 0px 24px 16px;
   background-color: var(---secondary-color);
 }
@@ -25,4 +32,10 @@
   font-size: var(---24px-fontSize);
   font-weight: 400;
   margin: 0;
+}
+
+@media screen and (max-width: 1110px) {
+  .collapse__wrapper {
+    width: 100%;
+  }
 }

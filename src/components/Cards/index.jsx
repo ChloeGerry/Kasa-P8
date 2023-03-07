@@ -17,9 +17,11 @@ const Cards = () => {
   return (
     <section className="cards__wrapper">
       {housings.map(({ id, title, cover }) => (
-        <Link key={id} to={`/housing/${id}`}>
-          <Card cover={cover} title={title} />
-        </Link>
+        <article>
+          <Link key={id} to={`/housing/${id}`} className="card__wrapper">
+            <Card cover={cover} title={title} />
+          </Link>
+        </article>
       ))}
     </section>
   );

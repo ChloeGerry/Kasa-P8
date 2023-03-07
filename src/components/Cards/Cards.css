@@ -9,6 +9,12 @@
   border-radius: var(---borderRadius-desktop);
 }
 
+.card__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 @media screen and (max-width: 767px) {
   .cards__wrapper {
     gap: 24px;

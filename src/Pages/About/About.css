@@ -5,3 +5,10 @@
   gap: 32px;
   margin: 32px 0px 48px 0px;
 }
+
+@media screen and (max-width: 767px) {
+  .collapses__wrapper {
+    margin: 24px var(---margin-mobile) 168px var(---margin-mobile);
+    gap: 24px;
+  }
+}

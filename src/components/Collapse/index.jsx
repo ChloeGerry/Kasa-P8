@@ -6,12 +6,12 @@ const Collapse = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
-    <article>
+    <article className="collapse__wrapper">
       <div className="collapse__titleWrapper">
         <p className="collapse__title">{title}</p>
         <svg
           onClick={() => setIsOpen(false)}
-          className="collapse__downArrow"
+          className="collapse__arrow"
           width="25"
           height="15"
           viewBox="0 0 25 15"
@@ -29,12 +29,12 @@ const Collapse = ({ title, text }) => {
       </div>
     </article>
   ) : (
-    <article>
-      <div className="collapse__valueWrapper">
-        <p className="collapse__value">{title}</p>
+    <article className="collapse__wrapper">
+      <div className="collapse__titleWrapper">
+        <p className="collapse__title">{title}</p>
         <svg
           onClick={() => setIsOpen(true)}
-          className="scollapse__downArrow"
+          className="collapse__arrow"
           width="25"
           height="15"
           viewBox="0 0 25 15"

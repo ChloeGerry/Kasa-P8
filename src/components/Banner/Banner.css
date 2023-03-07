@@ -19,15 +19,29 @@
   color: var(---white);
 }
 
+@media screen and (max-width: 930px) {
+  .banner__wrapper {
+    justify-content: flex-start;
+  }
+
+  .banner__title {
+    width: 70%;
+    padding-left: 16px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .banner__wrapper {
     margin: 16px var(---margin-mobile) 0px var(---margin-mobile);
   }
 
   .banner__image {
-    width: var(---pictureWidth-mobile);
     height: 111px;
     border-radius: var(---borderRadius-mobile);
+  }
+
+  .banner__image-aboutPage {
+    height: 223px;
   }
 
   .banner__title {
