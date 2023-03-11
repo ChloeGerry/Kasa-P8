@@ -2,18 +2,15 @@
   margin-top: 56px;
 }
 
-.navigationBar__links {
+.navigationBar a {
   color: var(---primary-color);
   font-size: var(---24px-fontSize);
+  margin-left: 56px;
   text-decoration: none;
 }
 
-.navigationBar__links:focus {
+.navigationBar a.active {
   text-decoration: underline;
-}
-
-.navigationBar__homeLink {
-  margin-right: 56px;
 }
 
 @media screen and (max-width: 767px) {
@@ -21,12 +18,9 @@
     margin-top: 40px;
   }
 
-  .navigationBar__links {
+  .navigationBar a {
     font-size: 12px;
     text-transform: uppercase;
-  }
-
-  .navigationBar__homeLink {
-    margin-right: 8px;
+    margin-left: 8px;
   }
 }

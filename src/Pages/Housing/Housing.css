@@ -1,0 +1,69 @@
+.housing__section {
+  margin: 0px var(---margin-desktop) 32px var(---margin-desktop);
+}
+
+.housing__informations {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.housing__title {
+  color: var(---primary-color);
+  font-size: 36px;
+  margin: 0px;
+}
+
+.housing__location {
+  color: var(---primary-color);
+  font-size: var(---18px-fontSize);
+  margin: 8px 0px 24px 0px;
+}
+
+.housing__tagsWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.housing__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: var(---borderRadius-mobile);
+  background-color: var(---primary-color);
+  width: 115px;
+  color: var(---white);
+  padding: 4px 32px;
+  margin: 0px 0px 24px 0px;
+  font-size: 14px;
+}
+
+.housing__host {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.housing__hostName {
+  color: var(---primary-color);
+  font-size: var(---18px-fontSize);
+  text-align: end;
+  width: 50%;
+}
+
+.housing__hostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.housing__collapse {
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+}
+
+.housing__equipments {
+  margin: 0;
+}

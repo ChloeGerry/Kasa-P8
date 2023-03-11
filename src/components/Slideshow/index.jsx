@@ -1,41 +1,25 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+import './Slideshow.css';
 
-const Slideshow = () => {
-  const [housings, setHousings] = useState([]);
-  const hostId = useParams();
+const Slideshow = ({ hostPictures }) => {
+  const [index, setIndex] = useState(0);
+  let currentIndex = null;
 
-  useEffect(() => {
-    fetch('http://localhost:3000/data.json')
-      .then((result) => result.json())
-      .then((housings) => setHousings(housings))
-      .catch((error) => console.log(error));
-  }, []);
+  const previousPicture = () => {
+    currentIndex = index - 1;
+    setIndex(currentIndex < 0 ? hostPictures.length - 1 : currentIndex);
+  };
 
-  let housingsIds = [];
+  const nextPicture = () => {
+    currentIndex = index + 1;
+    setIndex(currentIndex >= hostPictures.length ? 0 : currentIndex);
+  };
 
-  const unfilteredHousingId = housings.map(({ id }) => id);
-
-  unfilteredHousingId.forEach((id) => {
-    if (!housingsIds.includes(id)) {
-      housingsIds.push(id);
-    }
-  });
-
-  const isIdMatching = housingsIds.includes(hostId.id);
-
-  const findHostById = housingsIds.find((housingId) => housingId === hostId.id);
-  console.log(findHostById);
-
-  console.log(
-    housings.map(({ pictures }) => (
-      <img key={pictures} src={pictures} alt="housing" />
-    ))
-  );
-
-  return isIdMatching ? (
-    <section>
+  return hostPictures.length > 1 ? (
+    <section className="slideshow__wrapper">
       <svg
+        onClick={() => previousPicture()}
+        className="slideshow__arrows slideshow__leftArrow"
         width="48"
         height="80"
         viewBox="0 0 48 80"
@@ -47,11 +31,9 @@ const Slideshow = () => {
           fill="white"
         />
       </svg>
-      <p>Bienvenue</p>
-      {/* {findHostById(housings).map(({ pictures }, index) => (
-        <img key={`${pictures}-${index}`} src={pictures} alt="housing" />
-      ))} */}
       <svg
+        onClick={() => nextPicture()}
+        className="slideshow__arrows slideshow__rightArrow"
         width="48"
         height="80"
         viewBox="0 0 48 80"
@@ -63,8 +45,26 @@ const Slideshow = () => {
           fill="white"
         />
       </svg>
+      <p className="slideshow__index">
+        {index + 1}/{hostPictures.length}
+      </p>
+      <img
+        className="slideshow__picture"
+        key={`${hostPictures[index]}-${index}`}
+        src={hostPictures[index]}
+        alt="housing"
+      />
     </section>
-  ) : null;
+  ) : (
+    <section className="slideshow__wrapper">
+      <img
+        className="slideshow__picture"
+        key={`${hostPictures[index]}-${index}`}
+        src={hostPictures[index]}
+        alt="housing"
+      />
+    </section>
+  );
 };
 
 export default Slideshow;
