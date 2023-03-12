@@ -14,7 +14,6 @@
 
 .collapse__title {
   color: var(---white);
-  font-size: var(---24px-fontSize);
 }
 
 .collapse__arrow {
@@ -23,13 +22,12 @@
 
 .collapse__textWrapper {
   border-radius: 0px 0px 5px 5px;
-  padding: 32px 0px 24px 16px;
+  padding: 24px 8px 24px 16px;
   background-color: var(---secondary-color);
 }
 
 .collapse__text {
   color: var(---primary-color);
-  font-size: var(---24px-fontSize);
   font-weight: 400;
   margin: 0;
 }
@@ -37,5 +35,9 @@
 @media screen and (max-width: 1110px) {
   .collapse__wrapper {
     width: 100%;
+  }
+
+  .collapse__textWrapper {
+    padding: 16px 8px 8px 8px;
   }
 }

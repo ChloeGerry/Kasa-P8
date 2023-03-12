@@ -1,0 +1,21 @@
+.housing__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: var(---borderRadius-mobile);
+  background-color: var(---primary-color);
+  width: 115px;
+  color: var(---white);
+  padding: 8px 32px;
+  margin: 0px 0px 24px 0px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .housing__tag {
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 4px 4px;
+  }
+}

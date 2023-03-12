@@ -2,13 +2,18 @@ import './Collapse.css';
 import '../../style/variables.css';
 import { useState } from 'react';
 
-const Collapse = ({ title, text }) => {
+const Collapse = ({ title, text, titleFontSize, textFontSize }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <article className="collapse__wrapper">
       <div className="collapse__titleWrapper">
-        <p className="collapse__title">{title}</p>
+        <p
+          style={{ fontSize: `${titleFontSize}px` }}
+          className="collapse__title"
+        >
+          {title}
+        </p>
         <svg
           onClick={() => setIsOpen(!isOpen)}
           className="collapse__arrow"
@@ -33,7 +38,12 @@ const Collapse = ({ title, text }) => {
       </div>
       {isOpen && (
         <div className="collapse__textWrapper">
-          <div className="collapse__text">{text}</div>
+          <div
+            style={{ fontSize: `${textFontSize}px` }}
+            className="collapse__text"
+          >
+            {text}
+          </div>
         </div>
       )}
     </article>
