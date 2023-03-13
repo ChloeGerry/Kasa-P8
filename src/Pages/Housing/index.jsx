@@ -33,30 +33,16 @@ const Housing = () => {
   const housingTags = housing.tags;
   const hostPicture = housing.host.picture;
   const hostName = housing.host.name;
-  const hostRating = housing.rating;
+  const hostRating = Number(housing.rating);
   const medium = 18;
   const minimim = 13;
   const extraMinimum = 12;
   const titleSize = window.innerWidth >= 767 ? medium : minimim;
   const textSize = window.innerWidth >= 767 ? medium : extraMinimum;
-  const ratings = ['1', '2', '3', '4', '5'];
-  const star =
-    ratings.length < housing.rating ? (
-      <Star color={'#FF6060'} />
-    ) : (
-      <Star color={'#E3E3E3'} />
-    );
-
-  console.log(
-    'test',
-    ratings.forEach((rate) => (rate === hostRating ? <Star /> : null))
-  );
-  console.log(
-    'test 2',
-    ratings.map((rate) =>
-      rate >= hostRating ? <Star key={rate.toString()} /> : null
-    )
-  );
+  let ratings = Array(5).fill(null);
+  ratings.forEach((_, index) => {
+    ratings[index] = index + 1;
+  });
 
   return (
     <main>
@@ -67,8 +53,8 @@ const Housing = () => {
             <h1 className="housing__title">{housingTitle}</h1>
             <p className="housing__location">{housingLocation}</p>
             <div className="housing__tagsWrapper">
-              {housingTags.map((tag, index) => (
-                <Tag key={`${tag}-${index}`} tag={tag} />
+              {housingTags.map((tagLabel) => (
+                <Tag key={tagLabel} tagLabel={tagLabel} />
               ))}
             </div>
           </div>
@@ -83,11 +69,12 @@ const Housing = () => {
             </div>
             <div className="star__iconWrapper">
               {ratings.map((rate) =>
-                rate >= hostRating ? (
-                  <Star key={rate.toString()} color={'#FF6060'} />
-                ) : null
+                rate <= hostRating ? (
+                  <Star key={rate} color="#FF6060" />
+                ) : (
+                  <Star key={rate} color="#E3E3E3" />
+                )
               )}
-              {ratings.map((rate) => (rate >= hostRating ? star : null))}
             </div>
           </div>
         </div>
