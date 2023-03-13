@@ -1,5 +1,5 @@
 .housing__section {
-  margin: 0px var(---margin-desktop) 32px var(---margin-desktop);
+  margin: 0px var(---margin-desktop) 48px var(---margin-desktop);
 }
 
 .housing__informations {
@@ -61,6 +61,12 @@
   margin: 0;
 }
 
+@media (max-width: 1150px) and (min-width: 768px) {
+  .housing__tagsWrapper {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 900px) and (min-width: 768px) {
   .housing__section {
     margin: 0px 32px 64px 32px;
@@ -74,6 +80,7 @@
 
   .housing__informations {
     flex-direction: column;
+    margin-top: 16px;
   }
 
   .housing__title {
@@ -82,6 +89,7 @@
 
   .housing__location {
     font-size: 14px;
+    margin: 8px 0px;
   }
 
   .housing__hostAndRatingWrapper {
@@ -89,10 +97,12 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-top: 8px;
   }
 
   .housing__host {
     justify-content: flex-end;
+    margin-bottom: 0px;
   }
 
   .housing__hostName {
@@ -111,7 +121,6 @@
   .housing__collapseWrapper {
     flex-direction: column;
     gap: 24px;
-    margin-top: 16px;
   }
 
   .housing__collapse {

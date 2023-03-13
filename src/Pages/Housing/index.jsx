@@ -33,13 +33,10 @@ const Housing = () => {
   const housingTags = housing.tags;
   const hostPicture = housing.host.picture;
   const hostName = housing.host.name;
+
   const hostRating = Number(housing.rating);
-  const medium = 18;
-  const minimim = 13;
-  const extraMinimum = 12;
-  const titleSize = window.innerWidth >= 767 ? medium : minimim;
-  const textSize = window.innerWidth >= 767 ? medium : extraMinimum;
   let ratings = Array(5).fill(null);
+
   ratings.forEach((_, index) => {
     ratings[index] = index + 1;
   });
@@ -80,14 +77,12 @@ const Housing = () => {
         </div>
         <div className="housing__collapseWrapper">
           <Collapse
-            titleFontSize={titleSize}
-            textFontSize={textSize}
+            size="medium"
             title="Description"
             text={housingDescription}
           />
           <Collapse
-            titleFontSize={titleSize}
-            textFontSize={textSize}
+            size="medium"
             title="Équipements"
             text={housingEquipments.map((equipment, index) => (
               <p className="housing__equipments" key={`${index}-${equipment}`}>

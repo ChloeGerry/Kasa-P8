@@ -17,4 +17,8 @@
   .card__image {
     height: 255px;
   }
+
+  .card__title {
+    width: 80%;
+  }
 }

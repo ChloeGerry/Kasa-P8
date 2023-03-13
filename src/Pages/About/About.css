@@ -6,6 +6,12 @@
   margin: 32px 0px 48px 0px;
 }
 
+@media (max-width: 1150px) and (min-width: 768px) {
+  .collapses__wrapper {
+    margin: 32px var(---margin-desktop) 48px var(---margin-desktop);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .collapses__wrapper {
     margin: 24px var(---margin-mobile) 168px var(---margin-mobile);

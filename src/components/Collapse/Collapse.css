@@ -3,12 +3,13 @@
 }
 
 .collapse__titleWrapper {
-  height: 47px;
-  background-color: var(---primary-color);
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  bottom: -10px;
+  height: 47px;
+  background-color: var(---primary-color);
   padding: 0px 16px;
 }
 
@@ -21,8 +22,7 @@
 }
 
 .collapse__textWrapper {
-  border-radius: 0px 0px 5px 5px;
-  padding: 24px 8px 24px 16px;
+  padding: 40px 8px 8px 16px;
   background-color: var(---secondary-color);
 }
 
@@ -32,12 +32,91 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1110px) {
+.collapse__wrapper--medium .collapse__titleWrapper {
+  border-radius: var(---borderRadius-mobile);
+}
+
+.collapse__wrapper--medium .collapse__title {
+  font-size: var(---18px-fontSize);
+}
+
+.collapse__wrapper--medium .collapse__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(---18px-fontSize);
+}
+
+.collapse__wrapper--medium .collapse__textWrapper {
+  height: 209px;
+  border-radius: var(---borderRadius-mobile);
+}
+
+.collapse__wrapper--large .collapse__titleWrapper {
+  border-radius: 5px;
+}
+
+.collapse__wrapper--large .collapse__title {
+  font-size: var(---24px-fontSize);
+}
+
+.collapse__wrapper--large .collapse__text {
+  font-size: var(---24px-fontSize);
+}
+
+.collapse__wrapper--large .collapse__textWrapper {
+  height: 146px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1150px) {
   .collapse__wrapper {
     width: 100%;
   }
 
-  .collapse__textWrapper {
+  .collapse__wrapper--medium .collapse__arrow {
+    width: 9px;
+    height: 15px;
+  }
+
+  .collapse__wrapper--medium .collapse__textWrapper {
     padding: 16px 8px 8px 8px;
+  }
+
+  .collapse__wrapper--medium .collapse__titleWrapper {
+    border-radius: 5px;
+    height: 30px;
+  }
+
+  .collapse__wrapper--medium .collapse__title {
+    font-size: 13px;
+  }
+
+  .collapse__wrapper--medium .collapse__textWrapper {
+    border-radius: 5px;
+    padding: 24px 8px 8px 8px;
+    height: 119px;
+  }
+
+  .collapse__wrapper--medium .collapse__text {
+    font-size: 12px;
+  }
+
+  .collapse__wrapper--large .collapse__title {
+    font-size: 13px;
+  }
+
+  .collapse__wrapper--large .collapse__arrow {
+    width: 9px;
+    height: 15px;
+  }
+
+  .collapse__wrapper--large .collapse__textWrapper {
+    height: 143px;
+    padding: 24px 8px 8px 8px;
+  }
+
+  .collapse__wrapper--large .collapse__text {
+    font-size: 12px;
   }
 }
