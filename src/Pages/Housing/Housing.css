@@ -1,3 +1,10 @@
+.loading {
+  color: var(---primary-color);
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+}
+
 .housing__section {
   margin: 0px var(---margin-desktop) 48px var(---margin-desktop);
 }

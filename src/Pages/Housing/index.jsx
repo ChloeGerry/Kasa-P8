@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './Housing.css';
 import Slideshow from '../../components/Slideshow';
 import Collapse from '../../components/Collapse';
@@ -21,8 +21,17 @@ const Housing = () => {
     return host.id === hostId.id;
   });
 
+  const navigate = useNavigate();
+  const isIdNotFound = housings.length > 0 && !housing;
+
+  useEffect(() => {
+    if (isIdNotFound) {
+      navigate('/*');
+    }
+  }, [isIdNotFound, navigate]);
+
   if (!housing) {
-    return <div>Loading</div>;
+    return <div className="loading">Loading</div>;
   }
 
   const housingPictures = housing.pictures;
