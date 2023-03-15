@@ -1,12 +1,12 @@
 import bannerImage from '../../assets/about-banner.jpg';
 import './About.css';
-import Banner from '../../components/Banner';
-import Collapse from '../../components/Collapse';
+import Banner from '../../components/layout/Banner';
+import Collapse from '../../components/layout/Collapse';
 
 const About = () => {
   return (
     <main>
-      <Banner className="banner__image-aboutPage" image={bannerImage} />
+      <Banner margin="medium" image={bannerImage} />
       <section className="collapses__wrapper">
         <Collapse
           size="large"

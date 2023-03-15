@@ -1,6 +1,6 @@
 import NavigationBar from '../NavigationBar';
 import './Header.css';
-import '../../style/variables.css';
+import '../../../style/variables.css';
 import HeaderLogo from '../Logos/HeaderLogo';
 
 const Header = () => {

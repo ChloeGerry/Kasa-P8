@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Housing from './Pages/Housing';
-import Error from './components/Error';
+import Error from './components/layout/Error';
 import About from './Pages/About';
 
 const Routing = () => {

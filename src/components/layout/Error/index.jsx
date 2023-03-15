@@ -1,4 +1,4 @@
-import '../../style/variables.css';
+import '../../../style/variables.css';
 import './Error-404.css';
 import { Link } from 'react-router-dom';
 
@@ -19,11 +19,9 @@ const Error = () => {
             fill="#FF6060"
           />
         </svg>
-
         <p className="error__text">
           Oups ! La page que vous demandez n'existe pas.
         </p>
-
         <Link to="/" className="error__homepageLink">
           Retourner sur la page d'accueil
         </Link>

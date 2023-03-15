@@ -22,7 +22,6 @@
 }
 
 .collapse__textWrapper {
-  padding: 40px 8px 8px 16px;
   background-color: var(---secondary-color);
 }
 
@@ -36,7 +35,8 @@
   border-radius: var(---borderRadius-mobile);
 }
 
-.collapse__wrapper--medium .collapse__title {
+.collapse__wrapper--medium .collapse__title,
+.collapse__wrapper--medium .collapse__text {
   font-size: var(---18px-fontSize);
 }
 
@@ -44,29 +44,26 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: var(---18px-fontSize);
 }
 
 .collapse__wrapper--medium .collapse__textWrapper {
+  padding: 40px 8px 8px 16px;
   height: 209px;
   border-radius: var(---borderRadius-mobile);
 }
 
-.collapse__wrapper--large .collapse__titleWrapper {
+.collapse__wrapper--large .collapse__titleWrapper,
+.collapse__wrapper--large .collapse__textWrapper {
   border-radius: 5px;
 }
 
-.collapse__wrapper--large .collapse__title {
-  font-size: var(---24px-fontSize);
-}
-
+.collapse__wrapper--large .collapse__title,
 .collapse__wrapper--large .collapse__text {
   font-size: var(---24px-fontSize);
 }
 
 .collapse__wrapper--large .collapse__textWrapper {
-  height: 146px;
-  border-radius: 5px;
+  padding: 24px 16px 16px 16px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -74,7 +71,8 @@
     width: 100%;
   }
 
-  .collapse__wrapper--medium .collapse__arrow {
+  .collapse__wrapper--medium .collapse__arrow,
+  .collapse__wrapper--large .collapse__arrow {
     width: 9px;
     height: 15px;
   }
@@ -88,7 +86,8 @@
     height: 30px;
   }
 
-  .collapse__wrapper--medium .collapse__title {
+  .collapse__wrapper--medium .collapse__title,
+  .collapse__wrapper--large .collapse__title {
     font-size: 13px;
   }
 
@@ -98,25 +97,12 @@
     height: 119px;
   }
 
-  .collapse__wrapper--medium .collapse__text {
+  .collapse__wrapper--medium .collapse__text,
+  .collapse__wrapper--large .collapse__text {
     font-size: 12px;
-  }
-
-  .collapse__wrapper--large .collapse__title {
-    font-size: 13px;
-  }
-
-  .collapse__wrapper--large .collapse__arrow {
-    width: 9px;
-    height: 15px;
   }
 
   .collapse__wrapper--large .collapse__textWrapper {
-    height: 143px;
-    padding: 24px 8px 8px 8px;
-  }
-
-  .collapse__wrapper--large .collapse__text {
-    font-size: 12px;
+    padding: 24px 8px 48px 8px;
   }
 }

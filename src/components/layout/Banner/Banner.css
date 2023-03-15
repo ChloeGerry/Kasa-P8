@@ -1,5 +1,12 @@
-.banner__wrapper {
+.banner__section--medium .banner__wrapper {
+  margin: 48px var(---margin-desktop) 0px var(---margin-desktop);
+}
+
+.banner__section--large .banner__wrapper {
   margin: 64px var(---margin-desktop) 0px var(---margin-desktop);
+}
+
+.banner__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,10 +27,6 @@
 }
 
 @media screen and (max-width: 930px) {
-  .banner__wrapper {
-    justify-content: flex-start;
-  }
-
   .banner__title {
     width: 70%;
     padding-left: 16px;
@@ -31,17 +34,18 @@
 }
 
 @media screen and (max-width: 767px) {
-  .banner__wrapper {
+  .banner__section--large .banner__wrapper,
+  .banner__section--medium .banner__wrapper {
     margin: 16px var(---margin-mobile) 0px var(---margin-mobile);
   }
 
-  .banner__image {
-    height: 111px;
+  .banner__section--large .banner__image,
+  .banner__section--medium .banner__image {
     border-radius: var(---borderRadius-mobile);
   }
 
-  .banner__image-aboutPage {
-    height: 223px;
+  .banner__section--large .banner__image {
+    height: 111px;
   }
 
   .banner__title {

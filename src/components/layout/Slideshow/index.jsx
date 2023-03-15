@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Slideshow.css';
+import '../../../style/variables.css';
 
 const Slideshow = ({ hostPictures }) => {
   const [index, setIndex] = useState(0);

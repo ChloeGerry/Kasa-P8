@@ -1,5 +1,5 @@
 import './Card.css';
-import '../../style/variables.css';
+import '../../../style/variables.css';
 
 const Card = ({ title, cover }) => {
   return (

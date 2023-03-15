@@ -1,8 +1,10 @@
 .slideshow__wrapper {
   margin: 24px var(---margin-desktop) 0px var(---margin-desktop);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .slideshow__arrows {
@@ -12,11 +14,11 @@
 }
 
 .slideshow__leftArrow {
-  left: 100px;
+  left: 0px;
 }
 
 .slideshow__rightArrow {
-  right: 100px;
+  right: 0px;
 }
 
 .slideshow__picture {
@@ -30,8 +32,14 @@
   position: absolute;
   font-size: var(---18px-fontSize);
   color: var(---white);
-  bottom: -32px;
   margin: 0px 0px 24px 0px;
+  bottom: 0px;
+}
+
+@media (max-width: 1300px) and (min-width: 768px) {
+  .slideshow__picture {
+    width: 100%;
+  }
 }
 
 @media (max-width: 900px) and (min-width: 768px) {
@@ -74,6 +82,6 @@
   }
 
   .slideshow__index {
-    display: none;
+    visibility: hidden;
   }
 }

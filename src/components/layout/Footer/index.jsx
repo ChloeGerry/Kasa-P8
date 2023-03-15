@@ -1,5 +1,5 @@
 import './Footer.css';
-import '../../style/variables.css';
+import '../../../style/variables.css';
 import FooterLogo from '../Logos/FooterLogo';
 
 const Footer = () => {
