@@ -1,5 +1,5 @@
 import './Banner.css';
-import '../../../style/variables.css';
+import '../../style/variables.css';
 
 const Banner = ({ title, image, margin }) => (
   <section

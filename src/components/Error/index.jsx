@@ -1,4 +1,4 @@
-import '../../../style/variables.css';
+import '../../style/variables.css';
 import './Error-404.css';
 import { Link } from 'react-router-dom';
 

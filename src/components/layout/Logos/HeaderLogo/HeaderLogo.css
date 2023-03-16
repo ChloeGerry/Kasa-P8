@@ -9,3 +9,9 @@
     margin-top: 24px;
   }
 }
+
+@media screen and (max-width: 374px) {
+  .header__logo {
+    width: 100px;
+  }
+}

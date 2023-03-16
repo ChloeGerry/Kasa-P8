@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './Housing.css';
-import Slideshow from '../../components/layout/Slideshow';
-import Collapse from '../../components/layout/Collapse';
-import Star from '../../components/layout/Rating';
-import Tag from '../../components/layout/Tag';
+import Slideshow from '../../components/Slideshow';
+import Collapse from '../../components/Collapse';
+import Star from '../../components/Rating';
+import Tag from '../../components/Tag';
 
 const Housing = () => {
   const [housings, setHousings] = useState([]);

@@ -1,5 +1,5 @@
 import './Collapse.css';
-import '../../../style/variables.css';
+import '../../style/variables.css';
 import { useState } from 'react';
 
 const Collapse = ({ title, text, size }) => {

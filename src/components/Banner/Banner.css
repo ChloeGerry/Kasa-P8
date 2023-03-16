@@ -42,6 +42,7 @@
   .banner__section--large .banner__image,
   .banner__section--medium .banner__image {
     border-radius: var(---borderRadius-mobile);
+    width: 100%;
   }
 
   .banner__section--large .banner__image {

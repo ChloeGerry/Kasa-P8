@@ -1,7 +1,7 @@
 import bannerImage from '../../assets/about-banner.jpg';
 import './About.css';
-import Banner from '../../components/layout/Banner';
-import Collapse from '../../components/layout/Collapse';
+import Banner from '../../components/Banner';
+import Collapse from '../../components/Collapse';
 
 const About = () => {
   return (
