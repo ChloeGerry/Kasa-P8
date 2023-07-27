@@ -8,7 +8,7 @@ const Cards = () => {
   const [housings, setHousings] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/data.json')
+    fetch('https://chloegerry.github.io/Kasa-P8/data.json')
       .then((result) => result.json())
       .then((housings) => setHousings(housings))
       .catch((error) => console.log(error));
