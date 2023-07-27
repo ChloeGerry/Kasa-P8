@@ -8,7 +8,7 @@ import Footer from './components/layout/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Kasa-P8">
     <Header />
     <Routing />
     <Footer />
